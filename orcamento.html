@@ -32,38 +32,40 @@
         <main>
     <h2 class="titulo">Orçamento de Eventos - Black Eventos</h2>
 
-    <form id="budgetForm">
+    <div class="form">
+    <form class="texto"  id="form">
         <label for="eventName">Nome do Evento:</label>
         <input type="text" id="eventName" required>
 
-        <label for="eventType">Tipo de Evento:</label>
-        <select id="eventType" required>
-            <option value="casamento">Casamento</option>
+        <label class="texto" for="eventType">Tipo de Evento:</label>
+        <select class="option" id="eventType" required>
+            <option class="" value="casamento">Casamento</option>
             <option value="aniversario">Aniversário</option>
             <option value="corporativo">Evento Corporativo</option>
             <option value="formatura">Formatura</option>
             
         </select>
 
-        <label for="guests">Número de Convidados:</label>
+        <label class="texto" for="guests">Número de Convidados:</label>
         <input type="number" id="guests" required>
 
-        <label for="decorations">Decorações:</label>
-        <select id="decorations">
+        <label class="texto" for="decorations">Decorações:</label>
+        <select class="option" id="decorations">
             <option value="basico">Básico</option>
             <option value="luxo">Luxo</option>
         </select>
 
-        <label for="catering">Catering:</label>
-        <select id="catering">
+        <label class="texto" for="catering">Catering:</label>
+        <select class="option" id="catering">
             <option value="buffet">Buffet</option>
             <option value="fingerfood">Finger Food</option>
         </select>
 
-        <label for="clientNotes">Notas do Cliente:</label>
+        <label class="texto" for="clientNotes">Notas do Cliente:</label>
         <textarea id="clientNotes"></textarea>
+    </div>
 
-        <button type="button" onclick="generatePDF()">Gerar Orçamento</button>
+        <button class="botao" type="button" onclick="generatePDF()">Gerar Orçamento</button>
     </main>
     </form>
     <footer>        
