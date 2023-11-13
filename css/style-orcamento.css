@@ -10,8 +10,33 @@ body {
 }
 
 .titulo {
-    color: red;
+    text-align: center;
+    font-size: 40px;
+    padding: 25px;
+    color: #f1af09;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
 }
+
+.form{
+    margin-left: 35px;
+    background-color: #ccc;
+}
+
+.form input, .option{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #f1af09;
+    border-radius: 4px;
+}
+
+.texto{
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 label {
     display: block;
